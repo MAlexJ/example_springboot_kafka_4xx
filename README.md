@@ -28,6 +28,19 @@ KAFKA_PASSWORD={Password}
 KAFKA_BROKER_URL=test.com:9094
 ```
 
+##### Bash command (manual clean)
+
+If you prefer cleaning via command line instead of Gradle:
+On macOS/Linux:
+
+```
+find . -type d -name "build" -exec rm -rf {} + \
+  && find . -type d -name ".gradle" -exec rm -rf {} + \
+  && find . -path "*/.idea/gradle.xml" -type f -delete \
+  && find . -path "*/.idea/modules.xml" -type f -delete \
+  && find . -type d -path "*/.idea/modules" -exec rm -rf {} +
+```
+
 ### Gradle
 
 ### Gradle Versions Plugin

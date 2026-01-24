@@ -7,6 +7,9 @@ build/
 !**/src/test/**/build/
 .env
 * .env
+*.pem
+*.cert
+*.key
 
 ### STS ###
 .apt_generated
