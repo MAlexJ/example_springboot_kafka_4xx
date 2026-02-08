@@ -19,7 +19,7 @@ spring:
       auto-offset-reset: earliest
       group-id: consumer-group-id
       key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
-      value-deserializer: org.springframework.kafka.support.serializer.JacksonJsonDeserializer
+      value-deserializer: com.malex.configuration.kafka.KafkaCustomDeserializer
       properties:
         spring.json.trusted.packages: com.malex
         spring.json.value.default.type: com.malex.Event

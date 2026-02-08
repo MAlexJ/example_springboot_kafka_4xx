@@ -4,9 +4,9 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class JsonSerializerProducerApplication {
+public class CustomSerializerProducerApplication {
 
   public static void main(String[] args) {
-    SpringApplication.run(JsonSerializerProducerApplication.class, args);
+    SpringApplication.run(CustomSerializerProducerApplication.class, args);
   }
 }
