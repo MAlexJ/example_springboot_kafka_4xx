@@ -1,4 +1,4 @@
-rootProject.name = 'example-springboot-kafka-4xx'
+rootProject.name = 'example_springboot_kafka_4xx'
 
 include 'simple-consumer-producer',
         'simple-consumer-producer:consumer',
