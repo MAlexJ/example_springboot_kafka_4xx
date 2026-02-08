@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: kafka-consumer
+
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - classpath:consumer-kafka.yml
+      - classpath:consumer-server.yml
+
+  threads:
+    virtual:
+      enabled: true

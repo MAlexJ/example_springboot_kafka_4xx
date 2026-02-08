@@ -15,4 +15,8 @@ include 'simple-consumer-producer',
         'test-kafka',
         'test-kafka:spring-kafka-test',
         'consumer-group-id',
-        'auto-offset-reset'
+        'auto-offset-reset',
+        'serializer_deserializer:custom_de_serializers:consumer',
+        'serializer_deserializer:custom_de_serializers:producer',
+        'serializer_deserializer:json_de_serializers:consumer',
+        'serializer_deserializer:json_de_serializers:producer'

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: kafka-producer
+
+  config:
+    import:
+      - optional:file:.env[.properties]
+      - classpath:producer-kafka.yml
+      - classpath:producer-server.yml
+
+  threads:
+    virtual:
+      enabled: true

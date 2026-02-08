@@ -1,0 +1,24 @@
+spring:
+  kafka:
+    bootstrap-servers: ${KAFKA_SERVER}
+
+    properties:
+      security.protocol: SSL
+
+      ssl.keystore.location: ${KEYSTORE_LOCATION}
+      ssl.keystore.password: ${KEYSTORE_PASSWORD}
+      ssl.keystore.type: ${KEYSTORE_TYPE}
+
+      ssl.truststore.location: ${TRUSTSTORE_LOCATION}
+      ssl.truststore.password: ${TRUSTSTORE_PASSWORD}
+      ssl.truststore.type: ${TRUSTSTORE_TYPE}
+
+      ssl.endpoint.identification.algorithm: https
+
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JacksonJsonSerializer
+
+kafka:
+  producer:
+    topic: events-topic

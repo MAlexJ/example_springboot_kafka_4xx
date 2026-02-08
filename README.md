@@ -2,23 +2,14 @@
 
 ## Description
 
-* Event streaming platform - Kafka
-* Web framework - Spring Boot 4.0.2
+* Kafka
+* Spring Boot 4.0.2
 * Java version 25
+* Gradle 9.3.1
 
 ## Docker
 
 docker-compose.yml
-
-### How to set up Kafka:
-
-link for info - https://customer.cloudkarafka.com/instance </br>
-documentation: https://www.cloudkarafka.com/docs/spring.html </br>
-Springboot sample: https://github.com/CloudKarafka/springboot-kafka-example </br>
-
-* Hostname with port - url for KAFKA_BROKER_URL
-* Default user - username for KAFKA_USERNAME
-* oPassword - Password for KAFKA_PASSWORD
 
 ### Add ENV properties to project/IDE or .env file
 
