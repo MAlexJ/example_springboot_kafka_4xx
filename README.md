@@ -3,7 +3,7 @@
 ## Description
 
 * Kafka
-* Spring Boot 4.0.2
+* Spring Boot 4.0.3
 * Java version 25
 * Gradle 9.3.1
 

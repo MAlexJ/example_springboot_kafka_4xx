@@ -5,12 +5,19 @@ build/
 !gradle/wrapper/gradle-wrapper.jar
 !**/src/main/**/build/
 !**/src/test/**/build/
-.env
 * .env
 *.pem
 *.cert
 *.key
 .DS_Store
+
+### Secrets ###
+.env
+cert
+.infisical.json
+*.p12
+*.b64
+*.p12.b64
 
 ### STS ###
 .apt_generated
